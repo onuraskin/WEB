@@ -1,0 +1,1 @@
+Data Source=DESKTOP-PJQ3A1C\KODB;Initial Catalog=PersonalVtb;Integrated Security=True

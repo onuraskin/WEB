@@ -1,0 +1,53 @@
+Veri Tipleri:
+bit:Mantıksal veri tipi logic veri tipi 0 ve 1 
+char: Sabit uzunluktaki veriler TC PLAKA vs vs 
+date:Tarih Saat 
+datetime:hem tarih hem saat 
+datetime2:tarih zaman formatı 
+decimal: ondalık sayılar
+smalldatetime=1970-2000 arası en fazla kullancağımız
+smallint=+-32 bin
+sql_variant: veri tipi bilinmeyen veriler için kullanılır 
+tinyint(0-256 arası 256 dahil değil arasındaki tam sayılar ) öğrenci sınav notu vs vs
+uniqueidentifier :rastgele karakter üretir
+varchar(50) : değişken uzunluktaki karekterler için kullanırız 
+----------------------------------------------------------------
+DML COMMANDS	data manipulation Language /**************
+-SELECT  SEÇ- LİSTELE 
+-INSERT  EKLE
+-DELETE SİL
+-UPDATE GÜNCELLE 
+********************
+*   -> TÜMÜNÜ,ALL
+FROM---> DEN DAN 
+QUERY->SORGU
+------------
+where(birnevi if )
+And
+OR
+> < >= <=
+---------------------
+insert into tabloadı (sütun adları) values(parametreler)
+Executenonquery=sorguyu çalıştır 
+ekle 
+sil 
+güncelle  ' de kullanılır
+----------------------------------
+güncelleme
+Update TabloAdıSetAlan1=@a1,Alan2=@a2
+----------------------------------------
+count=Sayaç
+sum=toplam Değeri verir
+avg=ortalama
+-----------------------------------
+SqlDatareader= veri okuyucu 
+
+
+
+
+
+
+
+
+
+

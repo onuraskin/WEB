@@ -1,0 +1,52 @@
+Button 
+Label
+Textbox
+Combobox
+Listbox
+Mastkedtextbox
+Picturebox
+Datetimepicker
+GroupBox
+Radiobutton
+checkbox
+panel
+Richtextbox
+
+ int sayi = Convert.ToInt16(textBox1.Text);
+  label2.Text = sayi.ToString();
+
+Foreach (1234)
+1=değişken türü
+2=değişken adı
+3=in (içinden şu diziden seç gibi)
+4=dizi adı .
+
+Console.Write("isim Giriniz : ");
+String ________ = Console.ReadLine();
+
+
+double sayi = Convert.ToDouble(textBox1.Text);
+            //label2.Text = Math.Abs(sayi).ToString();
+            //label2.Text = Math.Ceiling(sayi).ToString();
+            //label2.Text = Math.Floor(sayi).ToString();
+            //label2.Text = Math.Pow(sayi,2).ToString();
+            //label2.Text = Math.Sqrt(sayi).ToString();
+            //label2.Text = Math.PI.ToString();
+            //label2.Text = Math.Cos(sayi).ToString();
+
+
+
+
+
+
+
+
+            Label lbl = new Label();
+            Point loc2 = new Point(250,15);
+            lbl.Location = loc2;
+            lbl.Text = "Selam Dünya";
+            lbl.BackColor = Color.Yellow;
+            lbl.Height = 150;
+            lbl.Width = 200;
+            this.Controls.Add(lbl);
+            lbl.AutoSize = true;
