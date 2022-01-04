@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <p> Ad :<input type="text" name="Ad"> </p>
+        <p> Soyad : <input type="text" name="Soyad"></p>
+        <p>
+            Eposta: <input type="email" name="mail">
+        </p>
+        <p>
+            Password : <input type="password" name="password">
+        </p>
+        <p>
+            Parolayı Hatırla <input type="checkbox" name="ParolaHatirla">
+        </p>
+        <p> Cinsiyetiniz : <br>
+            Erkek <input type="radio" name="Cinsiyet">
+            Kadın <input type="radio" name="Cinsiyet"></p>
+        <p>
+            Hobileriniz : <br>
+            Kitap Okuma <input type="checkbox" name="hobi">
+            Film İzlemek<input type="checkbox" name="hobi">
+            Spor Yapmak <input type="checkbox" name="hobi">
+
+        </p>
+        <p>
+            Doğum Yeri : <br>
+            <select name="Doğum Yeri">
+                <option>Eskişehir</option>
+                <option>İstanbul</option>
+                <option>İzmir </option>
+                <option>Ankara</option>
+                <option>Bursa</option>
+
+            </select>
+        </p>
+        <p>
+            Doğum Yeri : <br>
+            <select multiple name="Doğum Yeri">
+                <option>Eskişehir</option>
+                <option>İstanbul</option>
+                <option>İzmir </option>
+                <option>Ankara</option>
+                <option>Bursa</option>
+
+            </select>
+        </p>
+    </form>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label for="girisyap">GirisYap:</label><br>
+        <input type="button" onclick="alert('You did İt ')" value="Giris Yap !">
+      </form>
+
+</body>
+
+</html>
