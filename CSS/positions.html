@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .kutu {
+            width: 150px;
+            height: 150px;
+
+        }
+
+        #kutu1 {
+            background: lime;
+            width: 100%;
+            position: sticky;
+            top: 50px;
+
+        }
+
+        #kutu2 {
+            background: magenta;
+
+        }
+
+        #kutu3 {
+            background: mediumaquamarine;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p><mark>position: absolute; sayfa basından bosluk bırakırken relative üst bloktan sonra bosluk bırakır top - left
+            ve position :fix ise o bölümün biryerde sabit kalmasını saglar bottom-right 0 ( sag alt)</mark></p>
+    <p><mark>position: sticky; özelliğini kullandım scrollu aşşağı çeksemde kutu1 topta kaldı ve aynı zamanda top50px
+            diyere
+            yukarıdan 50px boşluk bıraktım </mark></p>
+
+
+    <div class="kutu" id="kutu1">Kutu1</div>
+    <div class="kutu" id="kutu2">Kutu2</div>
+    <div class="kutu" id="kutu3">Kutu3</div>
+
+    <div style="height: 3000px;"></div>
+</body>
+
+</html>

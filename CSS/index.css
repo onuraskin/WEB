@@ -1,0 +1,28 @@
+/* Group Selectors
+(p)--> Tüm p etiketleri
+(div p )--> div içerisindeki tüm p etiketleri
+(div,p)--> Tüm div ve tüm p etiketleri
+(p+div)--> p etiketinden sonra gelen div etiketi
+*/ /*
+div p {
+    color: red;
+}
+Div'in içerisindeki paragraflar
+*/
+/*
+.container div p {
+    color: pink;
+} Div'in içerisinede containerın altında olan
+paragraflar
+*/
+/*div,p{  Tüm divler ver tüm p etiketileri
+    Bunada Group Selectors denir
+   color: red;
+} */
+/*
+p +div{
+    color: royalblue;
+}  p den sonra gelen div etiketleri*/
+div + p{
+    color: blue;
+}
