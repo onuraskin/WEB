@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div>
+        <p>Sıfırdan İleri Düzey Web Geliştirme</p>
+        <img src="image1.jpg" width="150px">
+    </div>
+    <br><br>
+    <p>Sıfırdan İleri Düzey Web Geliştirme</p>
+    <button id="slideup">SlideUp</button>
+    <button id="slidedown">SlideDown</button>
+    <button id="toggle">Toggle</button>
+    <br><br>
+    <button id="fadein">Fadein</button>
+    <button id="fadeout">Fadeout</button>
+    <button id="fadeto">FadeTo</button>
+    <button id="toggle2">Toggle</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#slideup").click(function () {
+                $("div").hide(3000);//3s
+
+            });
+            $("#slidedown").click(function () {
+                $("div").slideDown("slow", function () {
+                    alert("div gösterildi");
+                });
+            });
+            $("#toggle").click(function () {
+                $("div").slideToggle("slow");
+            });
+
+            $("#fadein").click(function () {
+                $("div").fadeIn(3000);//3s
+
+            });
+            $("#fadeout").click(function () {
+                $("div").fadeOut(1000,function() {
+                    alert("div gizlendi");
+                });
+            });
+            //opacity değiştirir
+            $("#fadeto").click(function () {
+                $("div").fadeTo("slow",0.5);
+            });
+            $("#toggle2").click(function () {
+                $("div").fadeToggle("slow");
+            });
+        });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

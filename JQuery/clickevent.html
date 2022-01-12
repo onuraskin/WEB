@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    .paragrafrenklendir{
+        color: purple;
+        font-size: 22px;
+
+    }
+</style>
+
+<body>
+    <p id="p1">Sıfırdan İleri Düzey Web Geliştirme</p>
+    <p id="p2">Sıfırdan İleri Düzey Web Geliştirme</p>
+    <p class="paragraf">Sıfırdan İleri Düzey Web Geliştirme</p>
+    <p class="paragraf">Sıfırdan İleri Düzey Web Geliştirme</p>
+    <script>
+        $(document).ready(function () {
+            //.paragraf #paragraf p olabilir
+            $(".paragraf").click(function(){
+                //console.log("paragrafa tıklandı");
+                $(this).addClass("paragrafrenklendir");
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>

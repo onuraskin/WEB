@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #message-box {
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+        }
+
+        #header {
+            cursor: pointer;
+            height: 20px;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+
+        #content {
+            height: 200px;
+            padding: 10px;
+            display: none;
+        }
+
+        #close {
+            float: right;
+        }
+
+        #close:hover {
+            color: gray;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#header").click(function () {
+                $("#content").toggle("slow");
+            });
+            $("#close").click(function () {
+                $("#message-box").hide("slow");
+            });
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+    <div id="message-box">
+        <div id="header">
+            <span id="close">X</span> Mesajınız Var
+
+        </div>
+        <div id="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit alias assumenda perferendis harum cumque
+            quis accusamus, iure adipisci quidem! Voluptatum, commodi dolores. Suscipit aut ducimus a debitis recusandae
+            quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magnam corporis deleniti facere quasi
+            enim accusantium officiis nemo voluptatem temporibus. Fugiat, vero dolores! Eaque ab veniam et adipisci.
+            Non, voluptatem!
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

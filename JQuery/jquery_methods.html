@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+            .highlight{
+                background-color: gray;
+
+            }
+            .orange{
+                background-color: orangered;
+            }
+        </style>
+
+    </head>
+
+<body>
+    <a href="#">Link1</a>
+    <h3 id="header">Kurslarım</h3>
+    <ul id="liste">
+        <img src="image1.jpg" width="200">
+        <li class="item-1">Sıfırdan İleri Düzey Web</li>
+        <li>Python Sıfırdan Uzman Seviyesine Programlama <a href="">Li nin A sı</a> </li>
+        <li>Android ve İOS mobil Uygulama Geliştirme</li>
+    </ul>
+    <input id="ad" type="text" placeholder="Adınız :">
+    <input id="soyad" type="text" placeholder="Soyadınız :">
+    <button id="btnKayitOl" onclick="kayitOl();">Kayıt ol</button>
+    <script>
+        //    console.log($("h3").text());
+        //    console.log($("ul li").text());
+        $("h3").text("Udemy Kurslarım");//metin set etme
+
+        function kayitOl() {
+            var ad = $("#ad").val();
+            var soyad = $("#soyad").val();
+            console.log(ad + "   " + soyad + "  " + " kursa kayıt oldu");
+            $("#ad").toggleClass("highlight");
+            
+            $("#soyad").addClass("orange");
+        }
+
+        $("img").attr("width","360");//resme yeni değer atma
+
+
+
+    </script>
+</body>
+
+</html>
